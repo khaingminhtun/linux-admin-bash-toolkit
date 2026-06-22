@@ -9,6 +9,7 @@ source "$(dirname "$0")/utils.sh"
 # Defaults
 # =========================
 BACKUP_DIR="./backups"
+LOG_DIR="./logs"
 
 # =========================
 # Help Function
