@@ -22,6 +22,14 @@ Commands:
 
   create-user <username>      Create a new user
 
+  list-users                   list users
+
+  delete-user <username>       Delete an existing user
+
+  user-status <username> lock  Lock user login
+
+  user-status <username> unlock unlock user login
+
   help                        Show this help message
 
 Examples:
@@ -37,6 +45,9 @@ EOF
 # ==================================
 
 source scripts/users/create_user.sh
+source scripts/users/list_users.sh
+source scripts/users/delete_user.sh
+source scripts/users/user_status.sh
 
 # ==================================
 # Parse Command
@@ -50,6 +61,17 @@ case "$COMMAND" in
 
         create_user "$2"
         ;;
+    list-users)
+	list_users
+	;;
+    delete-user)
+	 delete_user "$2"
+	;;
+    user-status)
+
+    user_status "$2" "$3"
+
+    ;;
 
     help)
 
