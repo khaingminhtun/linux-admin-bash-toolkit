@@ -26,9 +26,11 @@ Commands:
 
   delete-user <username>       Delete an existing user
 
-  user-status <username> lock  Lock user login
+  user-status <username> lock    Lock user login
 
-  user-status <username> unlock unlock user login
+  user-status <username> unlock  Unlock user login
+ 
+  reset-password <username>       Reset password
 
   help                        Show this help message
 
@@ -48,6 +50,7 @@ source scripts/users/create_user.sh
 source scripts/users/list_users.sh
 source scripts/users/delete_user.sh
 source scripts/users/user_status.sh
+source scripts/users/reset_password.sh
 
 # ==================================
 # Parse Command
@@ -68,10 +71,11 @@ case "$COMMAND" in
 	 delete_user "$2"
 	;;
     user-status)
-
-    user_status "$2" "$3"
-
-    ;;
+          user_status "$2" "$3"
+         ;;
+    reset-password)
+	    reset_password "$2"
+	 ;;
 
     help)
 

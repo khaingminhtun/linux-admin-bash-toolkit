@@ -13,3 +13,8 @@
 2026-07-19 16:10:50 [SUCCESS] User 'john' locked successfully.
 2026-07-19 16:11:01 [SUCCESS] User 'john' unlocked successfully. 
 2026-07-19 16:11:01 [WARNING] Now Set Password for 'john' fornew login after unlock
+2026-07-20 05:02:08 [ERROR] Failed to reset password for 'john'.
+2026-07-20 05:05:36 [ERROR] Failed to reset password for 'john'.
+2026-07-20 05:07:49 [ERROR] Failed to reset password for 'john'.
+2026-07-20 05:08:52 [SUCCESS] Password reset for user 'john'.
+2026-07-20 05:10:00 [SUCCESS] Password reset for user 'john'.
